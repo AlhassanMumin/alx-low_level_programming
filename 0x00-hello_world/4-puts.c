@@ -1,4 +1,5 @@
 #include <stdio.h>
+//this program prints a string
 
 int main(void)
 {
