@@ -1,12 +1,6 @@
 #include <stdio.h>
-/**
- * main - entry point
- *
- * return: always 0 (success)
- */
 
 int main(void)
 {
-export CFILE 0-main;
-return (0);
+	return (0);
 }
