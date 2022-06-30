@@ -2,6 +2,6 @@
 
 int main(void)
 {
-export CFILE = 0-main.c
+export CFILE = 0-main.c;
 	return (0);
 }
