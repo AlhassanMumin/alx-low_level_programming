@@ -7,6 +7,6 @@
 
 int main(void)
 {
-
+export CFILE 0-main;
 return (0);
 }
