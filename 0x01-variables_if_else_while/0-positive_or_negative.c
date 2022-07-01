@@ -7,9 +7,6 @@
  * This is my c program to check if a value is
  * positive, negative or zero
  */
-
-
-
 int main(void)
 {
 
