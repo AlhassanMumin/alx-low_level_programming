@@ -2,7 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * This header will print the last digits
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
