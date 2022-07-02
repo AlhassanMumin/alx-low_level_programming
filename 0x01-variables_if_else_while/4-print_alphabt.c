@@ -1,22 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <time.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	char emit_e_q;
-	
-	for (emit_e_q = 'a'; emit_e_q <= 'z'; emit_e_q++)
+	char low, e, q;
+
+	e = 'e';
+	q = 'q';
+
+	for (low = 'a'; low <= 'z'; low++)
 	{
-		if (emit_e_q == 'e' || emit_e_q == 'q')
-		{
-		}
-		else
-		{
-			putchar(emit_e_q);
-		}
-		
+		if (low != e && low != q)
+			putchar(low);
 	}
-	putchar('\n');
+		printf("\n");
 
 	return (0);
 }
