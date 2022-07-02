@@ -8,13 +8,13 @@
  */
 int main(void)
 {
-	int d;
-	char low;
+	int val;
+	char lower_case;
 
-	for (d = '0'; d <= '9'; d++)
-		putchar(d);
-	for (low = 'a'; low <= 'f'; low++)
-		putchar(low);
+	for (val = '0'; val <= '9'; val++)
+		putchar(val);
+	for (lower_case = 'a'; lower_case <= 'f'; lower_case++)
+		putchar(lower_case);
 	putchar('\n');
 
 	return (0);
