@@ -9,24 +9,25 @@
 int main(void)
 {
 	int d, e;
-	
+
 	for (d = '0'; d <= '8'; d++)
 	{
-		for (e = '1'; e <= '9'; e++)
+		for(e = '1'; e <= '9'; e++)
 		{
-			if (e > d )
+			if (e > d)
 			{
 				putchar(d);
 				putchar(e);
-				
+
 				if (d != '8')
 				{
 					putchar(',');
 					putchar(' ');
-				}	
-			}		
-		}			
+				}
+			}
+		}
 	}
+
 	putchar('\n');
 
 	return (0);
