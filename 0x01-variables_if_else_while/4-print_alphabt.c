@@ -10,13 +10,18 @@ int main(void)
 {
 	char emit_e_q, e, q;
 
-	e = 'e';
-	q = 'q';
-
 	for (emit_e_q = 'a'; emit_e_q <= 'z'; emit_e_q++)
 	{
-		if (emit_e_q != e || emit_e_q != q)
-			putchar(emit_e_q);
+		if (emit_e_q != 'e')
+		{
+		}
+		else if (emit_e_q != 'q')
+		{
+		}
+		else
+		{
+				putchar(emit_e_q);
+		}
 	}
 		putchar('\n');
 
