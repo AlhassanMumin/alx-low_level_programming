@@ -4,6 +4,7 @@
 int main(void)
 {
 	char emit_e_q;
+	
 	for (emit_e_q = 'a'; emit_e_q <= 'z'; emit_e_q++)
 	{
 		if (emit_e_q == 'e' || emit_e_q == 'q')
@@ -12,7 +13,8 @@ int main(void)
 		else
 		{
 			putchar(emit_e_q);
-		}	
+		}
+		
 	}
 	putchar('\n');
 
