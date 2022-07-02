@@ -14,14 +14,21 @@ int main(void)
 	{
 		for (e = '1'; e <= '9'; e++)
 		{
-			
-			putchar(d);
-			putchar(e);
-			if (d != '8')
+			if (d !=e )
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(d);
+				putchar(e);
+				
+				if (d != '8')
+				{
+					putchar(',');
+					putchar(' ');
+				}
+				
 			}
+				
+			
+			
 		}
 		
 		
