@@ -8,12 +8,12 @@
  */
 int main(void)
 {
-	char low;
+	char lower_case;
 	char nl = '\n';
 
-	for (low = 'a'; low <= 'z'; low++)
+	for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
 	{
-		putchar(low);
+		putchar(lower_case);
 	}
 	putchar(nl);
 
