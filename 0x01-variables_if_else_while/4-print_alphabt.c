@@ -12,10 +12,10 @@ int main(void)
 
 	for (emit_e_q = 'a'; emit_e_q <= 'z'; emit_e_q++)
 	{
-		if (emit_e_q != 'e')
+		if (emit_e_q == 'e')
 		{
 		}
-		else if (emit_e_q != 'q')
+		else if (emit_e_q == 'q')
 		{
 		}
 		else
