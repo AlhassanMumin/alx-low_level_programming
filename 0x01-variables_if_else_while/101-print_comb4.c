@@ -9,6 +9,7 @@
 int main(void)
 {
 int d, e, f;
+
 for (d = '0'; d <= '7'; d++)
 {
 	for (e = '1'; e <= '8'; e++)
@@ -25,7 +26,7 @@ for (d = '0'; d <= '7'; d++)
 					
 					if (d != '7')
 					{
-						putchar(',')
+						putchar(',');
 						putchar(' ');
 					}
 				}
