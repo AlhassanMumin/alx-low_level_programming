@@ -22,8 +22,7 @@ for (d = '0'; d <= '7'; d++)
 				{
 					putchar(d);
 					putchar(e);
-					putchar(f);
-					
+					putchar(f);	
 					if (d != '7')
 					{
 						putchar(',');
