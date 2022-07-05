@@ -20,21 +20,19 @@ for (f = '2'; f <= '9'; f++)
 {
 if (f > e)
 {
-	putchar(d);
-	putchar(e);
-	putchar(f);	
+putchar(d);
+putchar(e);
+putchar(f);	
 if (d != '7')
 {
-	putchar(',');		
-	putchar(' ');
+putchar(',');		
+putchar(' ');
 }
 }
 }
 }
 }
 }
-
-	putchar('\n');
-
-	return (0);
+putchar('\n');
+return (0);
 }
