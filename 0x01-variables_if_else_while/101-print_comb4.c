@@ -12,26 +12,26 @@ int d, e, f;
 
 for (d = '0'; d <= '7'; d++)
 {
-	for (e = '1'; e <= '8'; e++)
-	{
-		if (e > d)
-		{
-			for (f = '2'; f <= '9'; f++)
-			{
-				if (f > e)
-				{
-					putchar(d);
-					putchar(e);
-					putchar(f);	
-					if (d != '7')
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-			}
-		}
-	}
+for (e = '1'; e <= '8'; e++)
+{
+if (e > d)
+{
+for (f = '2'; f <= '9'; f++)
+{
+if (f > e)
+{
+	putchar(d);
+	putchar(e);
+	putchar(f);	
+if (d != '7')
+{
+	putchar(',');		
+	putchar(' ');
+}
+}
+}
+}
+}
 }
 
 	putchar('\n');
