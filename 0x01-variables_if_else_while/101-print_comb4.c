@@ -22,10 +22,10 @@ if (f > e)
 {
 putchar(d);
 putchar(e);
-putchar(f);	
+putchar(f);
 if (d != '7')
 {
-putchar(',');		
+putchar(',');
 putchar(' ');
 }
 }
