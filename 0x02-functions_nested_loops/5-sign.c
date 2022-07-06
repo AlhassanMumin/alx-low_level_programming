@@ -1,8 +1,7 @@
-#include <limits.h>
 #include "main.h"
 /**
  * print_sign(n) this  will print the sign of a number
- * @n
+ * @n: The number to be printed
  * Return: return n success
  */
 int print_sign(int n)
