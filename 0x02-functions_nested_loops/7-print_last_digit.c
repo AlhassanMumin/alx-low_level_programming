@@ -2,7 +2,7 @@
 /**
  * print_last_digit - This fuxn will prit the last digit
  * @last: the number which last digit is determined
- * Return The last digit to be returned
+ * Return: The last digit to be returned
  */
 int print_last_digit(int last)
 {
