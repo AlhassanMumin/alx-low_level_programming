@@ -5,7 +5,7 @@ void jack_bauer(void)
 
 	for (hours = 0; hours <= 23; hours++)
 	{
-		for (minute = 0; minute <= 59; minute++)
+		for (minutes = 0; minutes <= 59; minutes++)
 		{
 			_putchar((hours / 10) + '0');
 			_putchar((hours % 10) + '0');
