@@ -10,16 +10,16 @@ void print_to_98(int num)
 	{
 		while (num > 98)
 		{
-			num = num - 1;
 			printf("%d, ", num);
+			num = num - 1;
 		}
 	}
 	else if (num <= 98)
 	{
 		while (num < 98)
 		{
-			num = num + 1;
 			printf("%d, ", num);
+			num = num + 1;
 		}
 	}
 	printf("\n");
