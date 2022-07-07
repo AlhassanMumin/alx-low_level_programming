@@ -1,14 +1,16 @@
 #include "main.h"
 /**
- * print_numbers - Prints the numbers from 0-9.
+ * print_lin - Prints the length of line.
+ * @n: The number that determine line length
  */
 void print_line(int n)
 {
+	int k;
 
-	while (n)
+	if (n > 0)
 	{
-		_putchar('_');
-		n--;
+		for (k = 0; k < n; k++)
+			_putchar('_');
 	}
 
 	_putchar('\n');
