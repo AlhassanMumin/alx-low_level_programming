@@ -6,14 +6,12 @@
  */
 void print_to_98(int num)
 {
-	printf(" ");
-
 	if (num >= 98)
 	{
 		while (num > 98)
 		{
 			num = num - 1;
-			printf("%d", num);
+			printf("%d, ", num);
 		}
 	}
 	else if (num <= 98)
@@ -21,7 +19,7 @@ void print_to_98(int num)
 		while (num < 98)
 		{
 			num = num + 1;
-			printf("%d", num);
+			printf("%d, ", num);
 		}
 	}
 	printf("\n");
