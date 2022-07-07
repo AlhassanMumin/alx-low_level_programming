@@ -4,8 +4,7 @@
  *
  * @c: The character passed as argument
  *
- * Return: 1 if the character is upper
- * 	   0 if otherwise
+ * Return: 1 if the character is upper, 0 if otherwise
  */
 
 int _isupper(int c)
