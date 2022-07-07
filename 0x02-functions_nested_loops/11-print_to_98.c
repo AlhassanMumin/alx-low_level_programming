@@ -14,7 +14,7 @@ void print_to_98(int num)
 			num = num - 1;
 		}
 	}
-	else if (num <= 98)
+	else
 	{
 		while (num < 98)
 		{
