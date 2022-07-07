@@ -14,7 +14,7 @@ void print_to_98(int num)
 		while (num > 98)
 		{
 			num = num - 1;
-			printf(num);
+			printf("%d", num);
 		}
 	}
 	else if (num < 98)
@@ -22,9 +22,10 @@ void print_to_98(int num)
 		while (num < 98)
 		{
 			num = num + 1;
-			printf(num);
+			printf("%d", num);
 		}
 	}
 	printf(98);
+	printf("\n");
 }
 
