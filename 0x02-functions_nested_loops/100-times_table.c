@@ -6,7 +6,7 @@
  */
 void print_times_table(int n)
 {
-	int i, j, div;
+	int i, j k;
 
 	if (0 <= n && n <= 15)
 	{
@@ -14,30 +14,24 @@ void print_times_table(int n)
 		{
 			_putchar(0 + '0');
 			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
+			_putchar(' ');  
 			_putchar(' ');
 			_putchar(' ');
 
 			for (j = 1; j <= n; j++)
 			{
-
-				div = floor((i*j / 10));
-				if (div >= 1)
+				if (i*j > 9)
 				{
-
-					while (div > 9)
-					 {
-						 _putchar((floor(i*j / 100)) + '0');
-					 }
-					_putchar((floor(div / 10)));
-					_putchar(div + '0');
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
+					_putchar((floor(i*j / 10)) + '0');
+					_putchar((i*j % 10) + '0');
 				}
+				else if (i*j > 99)
+				{
+					_putchar((floor(i*j / 10)) + '0');
+					k = floor(i*j / 10);
+					_putchar((floor(i*j / 10)) + '0');
+					_putchar((i*j % 10) + '0');
+					
 				else
 				{
 					_putchar(i*j + '0');
