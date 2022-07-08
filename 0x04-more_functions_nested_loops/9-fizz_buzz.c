@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * main - Prints the numbers from 1-100, but for multiples of three,
  *        Fizz is printed instead of the number, for multiples of five,
@@ -11,7 +12,7 @@ int main(void)
 
 	for (val = 1; val <= 100; val++)
 	{
-		if val % 15 == 0)
+		if (val % 15 == 0)
 			printf("FizzBuzz");
 
 		else if ((val % 3) == 0 && val % 15 != 0)
