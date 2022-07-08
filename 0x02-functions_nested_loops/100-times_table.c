@@ -8,7 +8,7 @@ void print_times_table(int n)
 {
 	int i, j, k;
 
-	if (0 <= n && n <= 15)
+	if (n >= 0 && n <= 15)
 	{
 		for (i = 0; i <= n; i++)
 		{
@@ -19,10 +19,10 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 
-				k = i*j;
+				k = i * j;
 
 				if (k <= 99)
-  				{
+				{
 					_putchar(' ');
 				}
 				if (k <= 9)
