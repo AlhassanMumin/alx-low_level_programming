@@ -29,14 +29,13 @@ void print_times_table(int n)
 				{
 					_putchar(i*j + '0');
 				}
-				if (j <= n)
+				if (j < n)
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
 				}
-					
 			}
 			_putchar('\n');
 		}
