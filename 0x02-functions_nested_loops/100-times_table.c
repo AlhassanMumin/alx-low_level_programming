@@ -36,8 +36,12 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar(' ');
 				}
+				if (j == n)
+				{
+					_putchar('\n');
+				}
 			}
-			_putchar('\n');
+			
 		}
 	}
 }
