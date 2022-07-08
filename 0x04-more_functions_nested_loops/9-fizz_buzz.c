@@ -7,23 +7,23 @@
  */
 int main(void)
 {
-	int i;
+	int val;
 
-	for (i = 1; i <= 100; i++)
+	for (val = 1; val <= 100; val++)
 	{
-		if ((i % 3) == 0 && (i % 5) == 0)
+		if ((val % 3) == 0 && (val % 5) == 0)
 			printf("FizzBuzz");
 
-		else if ((i % 3) == 0)
+		else if ((val % 3) == 0)
 			printf("Fizz");
 
-		else if ((i % 5) == 0)
+		else if ((val % 5) == 0)
 			printf("Buzz");
 
 		else
-			printf("%d", i);
+			printf("%d", val);
 
-		if (i == 100)
+		if (val == 100)
 			continue;
 		printf(" ");
 	}
@@ -32,4 +32,3 @@ int main(void)
 
 	return (0);
 }
-
