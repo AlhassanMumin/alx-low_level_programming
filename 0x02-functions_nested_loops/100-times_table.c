@@ -31,6 +31,7 @@ void print_times_table(int n)
 					k = floor(i*j / 10);
 					_putchar((floor(i*j / 10)) + '0');
 					_putchar((i*j % 10) + '0');
+				}
 					
 				else
 				{
