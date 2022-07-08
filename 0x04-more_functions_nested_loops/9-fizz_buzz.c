@@ -11,13 +11,13 @@ int main(void)
 
 	for (val = 1; val <= 100; val++)
 	{
-		if ((val % 3) == 0 && (val % 5) == 0)
+		if val % 15 == 0)
 			printf("FizzBuzz");
 
-		else if ((val % 3) == 0)
+		else if ((val % 3) == 0 && val % 15 != 0)
 			printf("Fizz");
 
-		else if ((val % 5) == 0)
+		else if ((val % 5) == 0 && val % 15 != 0)
 			printf("Buzz");
 
 		else
