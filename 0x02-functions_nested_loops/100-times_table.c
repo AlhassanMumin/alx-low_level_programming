@@ -20,7 +20,7 @@ void print_times_table(int n)
 
 			for (j = 1; j <= n; j++)
 			{
-				div = floor((i*j / 10))
+				div = floor((i*j / 10));
 				if (div > 9)
 				{
 					while (div > 9)
