@@ -26,7 +26,7 @@ void print_times_table(int n)
 					while (div > 9)
 					{
 						_putchar((floor(div / 10)) + '0');
-						div = div / div
+						div = div / div;
 					}
 					_putchar(',');
 					_putchar(' ');  
