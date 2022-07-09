@@ -14,21 +14,14 @@ int main(void)
 	for (i = 3; i <= 48; i++)
 	{
 		c = a + b;
-		if (c <= 4000000)
+		if ((c <= 4000000) && (c % 2 == 0))
 		{
-			if (i % 2 == 0)
-			{
-				sum = sum + i;
-			}
-		}
-		else
-		{
-			break;
+			sum = sum + c;
 		}
 		a = b;
 		b = c;
 	}
-	printf("%ld, ", sum);
+	printf("%ld", sum);
 	printf("\n");
 	return (0);
 }
