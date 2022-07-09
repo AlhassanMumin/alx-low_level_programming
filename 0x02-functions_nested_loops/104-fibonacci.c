@@ -11,10 +11,10 @@ int main(void)
 	b = 2;
 	printf("%lu, %lu, ", a, b);
 
-	for (i = 1; i <= 96; i++)
+	for (i = 3; i <= 98 i++)
 	{
 		c = a + b;
-		if (i < 96)
+		if (i < 98)
 		{
 			printf("%lu, ", c);
 		}
