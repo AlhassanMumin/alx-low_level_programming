@@ -5,13 +5,13 @@
  */
 int main(void)
 {
-	long int a, b, c;
+	long int a, b, c, i;
 
 	a = 1;
 	b = 2;
 	printf("%ld, %ld, ", a, b);
 
-	for (int i = 1; i <= 48; i++)
+	for (i = 1; i <= 48; i++)
 	{
 		c = a + b;
 		if (i < 48)
