@@ -11,7 +11,7 @@ int main(void)
 	b = 2;
 	printf("%lu, %lu, ", a, b);
 
-	for (i = 3; i <= 98 i++)
+	for (i = 3; i <= 98; i++)
 	{
 		c = a + b;
 		if (i < 98)
