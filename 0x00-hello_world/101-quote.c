@@ -5,11 +5,12 @@
  *
  * Return: 1
  */
-int main(void){
-	char str[60] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+int main(void)
+{
+	char str[60] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 	int size = strlen(str);
 
-	write(2,"and that piece of art is useful\" - Dora Korpar, 2015-10-19;\n", size);
+	write(2,"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", size);
 
 	return (1);
 }
