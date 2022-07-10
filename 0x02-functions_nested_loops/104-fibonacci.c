@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	unsigned long a, b, c, i;
+        unsigned long a, b, c, i;
 
 	a = 1;
 	b = 2;
