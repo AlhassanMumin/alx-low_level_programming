@@ -1,7 +1,7 @@
 #include <string.h>
 #include "main.h"
 /**
- * rev_strint - The func that will print the string in reverse
+ * rev_string - The func that will reverse the string
  *
  * @s: The point which  value is to be printed
  */
