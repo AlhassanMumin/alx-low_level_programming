@@ -10,6 +10,7 @@ void print_number(int n)
 {
 	int count, pw, val, rem, j, k;
 
+	k = 0;
 	pw = 1;
 	count = 0;
 	if (n < 0)
