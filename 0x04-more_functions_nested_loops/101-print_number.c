@@ -39,6 +39,5 @@ void print_number(int n)
 		count--;
 	}
 	_putchar(rem + '0');
-	_putchar('\n');
 }
 
