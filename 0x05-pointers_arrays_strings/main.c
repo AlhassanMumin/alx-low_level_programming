@@ -3,11 +3,12 @@
 
 int main(void)
 {
-	char *str;
-	int len;
-
-	str = "My first strlen!";
-	len = _strlen(str);
-	printf("%d\n",len);
+	int  ar[5];
+	ar[0]=3;
+	ar[1]= -40;
+	ar[2]=51;
+	ar[3]=700;
+	ar[4]=-1024;
+	print_array(ar,5);
 	return 0;
 }
