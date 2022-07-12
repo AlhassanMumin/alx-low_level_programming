@@ -8,8 +8,9 @@
  */
 void print_number(int n)
 {
-	int count, pw, val, rem, j;
+	int count, pw, val, rem, j, k;
 
+	pw = 1;
 	count = 0;
 	if (n < 0)
 	{
@@ -23,7 +24,12 @@ void print_number(int n)
 		val = val / 10;
 		count++;
 	}
-	pw = pow(10, count);
+	k = count;
+	while (k)
+	{
+		pw = pw * 10;
+		k--;
+	}
 	while (count)
 	{
 		j = floor(n / pw);
