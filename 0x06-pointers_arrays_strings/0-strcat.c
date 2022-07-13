@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * strcat - A func that will concatenate a string
+ * _strcat - A func that will concatenate a string
  * @src: A pointer to source s2
  * @dest: A pointe to s2
  * @Return: The string to be returned
