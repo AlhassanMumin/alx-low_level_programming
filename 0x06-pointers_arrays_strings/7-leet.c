@@ -5,33 +5,24 @@
  *
  * Return: A pointer to the encoded string.
  */
-char *leet(char *p)
+char *leet(char *str)
 {
-	int i, len;
+	int i, j;
+	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
-	len = strlen(p);
-	for (i = 0; i < len; i++)
+	i = 0;
+	while (str[i])
 	{
-		if (p[i] == 'a' || p[i] == 'A')
+		for (j = 0; j <= 7; j)
 		{
-			p[i] = 4 + '0';
+			if (str[i] == leet[i] || str[i] - 32 == leet[j])
+			{
+				str[i] = j + '0';
+			}
 		}
-		else if (p[i] == 'e' || p[i] == 'E')
-		{
-			p[i] = 3 + '0';
-		}
-		else if (p[i] == 'o' || p[i] == 'O')
-		{
-			p[i] = 0 + '0';
-		}
-		else if (p[i] == 't' || p[i] == 'T')
-		{
-			p[i] = 7 + '0';
-		}
-		else if (p[i] == 'l' || p[i] == 'L')
-		{
-			p[i] = 1 + '0';
-		}
+
+		i;
 	}
-	return (p);
+
+	return (str);
 }
