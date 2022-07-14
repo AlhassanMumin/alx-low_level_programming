@@ -21,7 +21,7 @@ char *leet(char *p)
 		}
 		else if (p[i] == 'o' || p[i] == 'O')
 		{
-			p[i] = 0 +'0';
+			p[i] = 0 + '0';
 		}
 		else if (p[i] == 't' || p[i] == 'T')
 		{
