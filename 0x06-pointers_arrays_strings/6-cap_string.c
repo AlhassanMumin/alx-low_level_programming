@@ -16,7 +16,8 @@ char *cap_string(char *ptr)
 	}
 	for (i = 1; i < len; i++)
 	{
-		if(isalpha(ptr[i]) && ptr[i - 1] == ' ')
+		if(isalpha(ptr[i]) && (ptr[i - 1] == ' ' || ptr[i - 1] == '.'
+				|| ptr[i - 1] == '\t' || ptr[i -1 ] == '\n'))
 		{
 			ptr[i] = toupper(ptr[i]);
 		}
