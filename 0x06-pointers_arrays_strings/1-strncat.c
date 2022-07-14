@@ -1,14 +1,15 @@
 #include <string.h>
 #include "main.h"
 /**
- * _strncat - a func that concatenate two strings with strncat()
+ * _strncat - Concatenates two strings using at most
+ *            an inputted number of bytes from src.
+ * @dest: The string to be appended upon.
+ * @src: The string to be appended to dest.
+ * @n: The number of bytes from src to be appended to dest.
  *
- * @dest: The pointer to the string that will be copied to
- * @src: The pointer to the sring to be copied
- * @n: The number of characters to copy
- * Return: It will return pointer to dest
+ * Return: A pointer to the resulting string dest.
  */
- char *_strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	 return (strncat(dest, src, n));
+	return (strncat(dest, src, n));
 }
