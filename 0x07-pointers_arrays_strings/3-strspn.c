@@ -1,14 +1,15 @@
 #include <string.h>
 /**
- * _strspn - the function calculate in byte the initial segment of
- * string s
- * @s: the stirng which iniial segment will be calculated
- * @accept: the string which determine how many bytes will be calculated
- * in string s
- * Return: the number of bytes in the initial segment of string s
+ * _strspn - the function to will return number of bytes
+ * @s: the string to be searched through with accept
+ * @accept: the substring to search
+ * Return: the number of bytes in initial segment of string s
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int byt = strspn(s, accept);
+	unsigned int byt;
+
+	byt = strspn(s, accept);
 	return (byt);
 }
+
