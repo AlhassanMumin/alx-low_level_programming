@@ -9,6 +9,6 @@
  */
 unsigned  int _strspn(char *s, char *accept)
 {
-	unsigned int byt =strspn(s, accept);
+	unsigned int byt = strspn(s, accept);
 	return (byt);
 }
