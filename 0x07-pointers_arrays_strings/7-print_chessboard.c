@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * pirnt_chessboard - the function to print chessboard
+ * print_chessboard - the function to print chessboard
  * @a: the square matrix representing a chessboard
  */
 void print_chessboard(char (*a)[8])
