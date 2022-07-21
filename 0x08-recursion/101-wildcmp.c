@@ -9,15 +9,13 @@
  */
 int wildcmp(char *s1, char *s2)
 {
-	int len;
-	len = strcmp(s1, s2);
-	if (len == 0)
+	if (strcmp(s1, s2) == 0)
 	{
-		len = 0;
+		return (1);
 	}
 	else
 	{
-		len = 1;
+		return (0);
 	}
-	return len;
+	return (strcmp(s1, s2));
 }
