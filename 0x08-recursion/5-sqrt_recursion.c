@@ -10,6 +10,10 @@ int sqrt_func(int a, int b)
 	{
 		return (b);
 	}
+	else if (b * b > a)
+	{
+		return (-1);
+	}
 	return (sqrt_func(a, b + 1));
 }
 /**
@@ -19,5 +23,5 @@ int sqrt_func(int a, int b)
  */
 int _sqrt_recursion(int n)
 {
-return (sqrt_func(n, 1));
+return (sqrt_func(n, 0));
 }
