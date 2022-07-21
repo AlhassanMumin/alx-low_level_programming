@@ -9,7 +9,7 @@
  */
 int wildcmp(char *s1, char *s2)
 {
-	if (strcmp(s1, s2) == 0 || '*' || ".*"  || "*[:[alpha]:]")
+	if (strcmp(s1, s2) == 0 || "[:[alpha]:]*" || ".*"  || "*[:[alpha]:]")
 	{
 		return (1);
 	}
