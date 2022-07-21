@@ -10,10 +10,6 @@ int sqrt_func(int a, int b)
 	{
 		return (b);
 	}
-	else if (b * b > a)
-	{
-		return (-1);
-	}
 	return (sqrt_func(a, b + 1));
 }
 /**
