@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <ctype.h>
 #include <stdio.h>
 /**
  * main - the stating point
@@ -9,20 +8,21 @@
  */
 int main(int argc, char *argv[])
 {
-	int result, i;
+	int result, i, j;
 
 	result = 0;
 	for (i = 1; i < argc; i++)
 	{
-		if (argv[i] < '0' || argv[i] == '9')
+		for (j =0; argv[i][j]; j++)
 		{
-			printf("Error\n");
-			return (1);
+			if (argv[i][j] < '0' || argv[i][j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else
-		{
-			result = result + atoi(argv[i]);
-		}
+		result = result + atoi(argv[i]);
+		
 	}
 	printf("%d\n", result);
 	return (0);
