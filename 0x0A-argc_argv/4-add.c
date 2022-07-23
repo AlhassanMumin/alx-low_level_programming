@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-			result = result + argv[i];
+			result = result + atoi(argv[i]);
 		}
 	}
 	printf("%d\n", result);
