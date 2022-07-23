@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * main - the stating point
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		result = result + argv[i];
+		result = result + atoi(argv[i]);
 		
 	}
 	printf("%d\n", result);
