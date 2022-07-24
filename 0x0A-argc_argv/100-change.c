@@ -50,8 +50,7 @@ int main(int  argc, char *argv[])
 		}
 	}
 	else if (money < 0)
-	{
-		printf("%d\n", count);
+	{ count = 0;
 	}
 	else if (argc != 2)
 	{
