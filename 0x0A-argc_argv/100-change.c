@@ -42,9 +42,10 @@ int main(int  argc, char *argv[])
 				bal = bal - div * 2;
 				count = count + div;
 			}
-			if (bal == 1)
+			if (bal <= 1)
 			{
-				count = count + 1;
+				count = count + bal;
+				bal = bal - bal;
 			}
 		}
 	}
