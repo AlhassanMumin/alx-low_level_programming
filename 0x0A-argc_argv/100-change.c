@@ -13,6 +13,14 @@ int main(int  argc, char *argv[])
 	count = 0,
 	money = atoi(argv[1]);
 	bal = money;
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	if (money < 0)
+	{
+	}
 	if (argc == 2 && money > 0)
 	{
 		while (bal)
@@ -48,14 +56,6 @@ int main(int  argc, char *argv[])
 				bal = bal - bal;
 			}
 		}
-	}
-	else if (money < 0)
-	{ count = 0;
-	}
-	else if (argc != 2)
-	{
-		printf("Error\n");
-		return (1);
 	}
 	printf("%d\n", count);
 	return (0);
