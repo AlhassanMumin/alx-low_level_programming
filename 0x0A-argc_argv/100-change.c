@@ -18,10 +18,7 @@ int main(int  argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	if (money < 0)
-	{
-	}
-	if (argc == 2 && money > 0)
+	if (argc == 2 && money >= 0)
 	{
 		while (bal)
 		{
