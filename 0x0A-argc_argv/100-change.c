@@ -18,8 +18,6 @@ int main(int  argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	if (argc == 2 && money >= 0)
-	{
 		while (bal)
 		{
 			if (bal >= 25)
@@ -53,8 +51,6 @@ int main(int  argc, char *argv[])
 				bal = bal - bal;
 			}
 		}
-	}
 	printf("%d\n", count);
 	return (0);
 }
-
