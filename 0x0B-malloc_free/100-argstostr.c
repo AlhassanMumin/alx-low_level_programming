@@ -1,3 +1,4 @@
+#include <string.h>
 #include <stdlib.h>
 /**
  * argstostr - It concatenate all the arguments
@@ -14,7 +15,7 @@
 	{
 		return (NULL);
 	}
-	concat = (char *)malloc(sizeof(char *) * (ac + 1));
+	concat = (char *)malloc(sizeof(char *) * (ac + strlen(*av)));
 	if (concat == NULL)
 	{
 		return (NULL);
