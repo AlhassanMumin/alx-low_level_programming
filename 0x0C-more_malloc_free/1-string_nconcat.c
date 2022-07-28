@@ -9,8 +9,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i;
-	unsigned int len;
+	unsigned int len, i;
 	char *str_ncpy;
 
 	len = strlen(s1);
@@ -37,4 +36,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	str_ncpy[len + 1] = '\0';
 	return (str_ncpy);
+	free(str_ncpy);
+}
 
