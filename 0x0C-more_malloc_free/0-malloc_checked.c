@@ -7,7 +7,7 @@
 void *malloc_checked(unsigned int b)
 {
 	void *alloc_mem;
-       
+
 	alloc_mem = malloc(b);
 	if (alloc_mem == NULL)
 	{
@@ -15,5 +15,3 @@ void *malloc_checked(unsigned int b)
 	}
 	return (alloc_mem);
 }
-
-
