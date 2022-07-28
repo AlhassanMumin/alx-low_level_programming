@@ -6,7 +6,7 @@
  * @av: the argument vector
  * Return: pinter to the new string or NULL if failure
  */
- char *argstostr(int ac, char **av)
+char *argstostr(int ac, char **av)
 {
 	int i, j;
 	char *concat;
@@ -15,7 +15,7 @@
 	{
 		return (NULL);
 	}
-	concat = (char *)malloc(sizeof(char *) * (ac + strlen(*av)));
+	concat = (char *)malloc(sizeof(char *) * (strlen(*av)));
 	if (concat == NULL)
 	{
 		return (NULL);
