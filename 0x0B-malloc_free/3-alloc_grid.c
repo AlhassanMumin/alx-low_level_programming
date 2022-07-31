@@ -21,9 +21,9 @@ int **alloc_grid(int width, int height)
 	}
 	for (i = 0; i < width; i++)
 	{
-		d_array[i] = malloc(sizeof(int) * height);;
+		d_array[i] = malloc(sizeof(int) * height);
 	}
-	for (i = 0; i < height; i++)
+	for (i = 0; i < width; i++)
 	{
 		free(d_array[i]);
 	}
