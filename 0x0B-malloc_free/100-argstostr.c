@@ -8,29 +8,27 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i, j;
+	int i, j, k;
 	char *concat;
 
+	k = 0;
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
-	concat = (char *)malloc(sizeof(char) * (1 + ac + strlen(*av)));
+	concat = malloc(sizeof(char *));
 	if (concat == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < ac; i++)
+	for (i = 1; i < ac; i++)
 	{
-		for (; av[i][j]; j++)
+		for (j = 0; strlen(av[i]); j++)
 		{
-			if (av[i][j] == ' ')
-			{
-				concat[j] = '\n';
-			}
-			concat[j] = av[i][j];
+			concat[k] = av[i][j];
+			k++;
 		}
+		_putchar('\n');
 	}
-	free(concat);
 	return (concat);
 }
