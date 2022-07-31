@@ -15,6 +15,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	str2 = (char *)malloc(sizeof(char) * (strlen(str) + 1));
+	free(str2);
 	if (str2 == NULL)
 	{
 		return (NULL);
@@ -24,5 +25,4 @@ char *_strdup(char *str)
 		str2[i] = str[i];
 	}
 	return (str2);
-	free(str2);
 }
