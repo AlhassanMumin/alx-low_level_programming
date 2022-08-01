@@ -5,5 +5,5 @@
  * ABS - the function like macro
  * @x: the variable which value to be converted
  */
-#define ABS(x)  (abs(x));
+#define ABS(x)  (abs(x))
 #endif
