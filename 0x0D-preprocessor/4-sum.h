@@ -5,5 +5,5 @@
  * @x: first variable to take value
  * @y: second variable to take value
  */
-#define SUM(x, y) ((x) + (y));
+#define SUM(x, y) ((x) + (y))
 #endif
