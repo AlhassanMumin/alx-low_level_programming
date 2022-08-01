@@ -6,11 +6,16 @@
  * @age: the age of my dog
  * @owner: the owner fo the dog
  */
- typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-}
-dog;
+};
+/**
+ * dog - typedef of dog
+ */
+
+typedef struct dog dg;
+void init_dog(struct dog *d, char *, float, char *);
 #endif
