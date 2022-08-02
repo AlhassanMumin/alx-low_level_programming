@@ -18,7 +18,6 @@ int **alloc_grid(int width, int height)
 	d_array = malloc(sizeof(int *) * (height));
 	if (d_array == NULL)
 	{
-		printf("this will never run");
 		return (NULL);
 	}
 	for (i = 0; i < height; i++)
@@ -26,12 +25,11 @@ int **alloc_grid(int width, int height)
 		d_array[i] = malloc(sizeof(int) * width);
 		if (d_array[i] == NULL)
 		{
-			/*
 			for (; i >= 0; i--)
-			{		
-				free(d_array[i]);
+			{
+				free(d_array[i];
 			}
-			free(d_array);*/
+			free(d_array);
 			return (NULL);
 		}
 	}
