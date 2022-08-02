@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * alloc_grid - it will allocate a pointer to a 2D array
@@ -17,6 +18,7 @@ int **alloc_grid(int width, int height)
 	d_array = malloc(sizeof(int *) * (height));
 	if (d_array == NULL)
 	{
+		printf("this will never run");
 		return (NULL);
 	}
 	for (i = 0; i < height; i++)
@@ -24,6 +26,12 @@ int **alloc_grid(int width, int height)
 		d_array[i] = malloc(sizeof(int) * width);
 		if (d_array[i] == NULL)
 		{
+			/*
+			for (; i >= 0; i--)
+			{		
+				free(d_array[i]);
+			}
+			free(d_array);*/
 			return (NULL);
 		}
 	}
@@ -34,10 +42,5 @@ int **alloc_grid(int width, int height)
 			d_array[i][j] = 0;
 		}
 	}
-	for (; i >= 0; i--)
-	{
-		free(d_array[i]);
-	}
-	free(d_array);
 	return (d_array);
 }
