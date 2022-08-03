@@ -4,7 +4,7 @@ void my_name(char *);
 /**
  * print_name -  the function to call my_name functin
  * @name: the name to be printed
- * @(*f): the pointe to the funtion my_name
+ * @f: the pointe to the funtion my_name
  */
 void print_name(char *name, void (*f)(char *))
 {
