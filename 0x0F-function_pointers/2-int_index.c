@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /**
  * int_index -  the function  to return and index
  * @array: the input array
