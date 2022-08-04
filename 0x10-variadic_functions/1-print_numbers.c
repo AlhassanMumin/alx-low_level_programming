@@ -1,7 +1,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * printt_numbers - print numbers inputed
+ * print_numbers - print numbers inputed
  * @separator:  the separator variable
  * @n:  the number of varaibles to print
  * @...: the variadic function notation
