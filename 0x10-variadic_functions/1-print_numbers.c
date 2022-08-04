@@ -9,6 +9,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int  i;
 	va_list ap;
+	
+	if (n == NULL)
+		return;
 
 	va_start(ap, n);
 	for (i = 0; i < n - 1; i++)
