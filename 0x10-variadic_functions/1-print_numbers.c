@@ -4,6 +4,7 @@
  * printt_number - print numbers inputed
  * @separator:  the separator variable
  * @n:  the number of varaibles to print
+ * @...: the variadic function notation
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -21,7 +22,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%d%s", va_arg(ap, int), separator);
 		}
 	}
-	printf("%d", va_arg(ap, int));
+	printf("%d\n", va_arg(ap, int));
 	va_end(ap);
-	printf("\n");
 }
