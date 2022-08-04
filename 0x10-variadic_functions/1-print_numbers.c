@@ -1,7 +1,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * printt_number - print numbers inputed
+ * printt_numbers - print numbers inputed
  * @separator:  the separator variable
  * @n:  the number of varaibles to print
  * @...: the variadic function notation
@@ -17,7 +17,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(ap, n);
 	for (i = 0; i < n - 1; i++)
 	{
-		if ((*separator))
+		if ((*separator != NULL))
 		{
 			printf("%d%s", va_arg(ap, int), separator);
 		}
