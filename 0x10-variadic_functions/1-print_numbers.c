@@ -17,11 +17,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(ap, n);
 	for (i = 0; i < n; i++)
 	{
-		if ((*separator && (n - 1)))
+		printf("%d", va_arg(ap, int));
+		if (index != (n - 1) && separator != NULL)
 		{
 			printf("%d%s", va_arg(ap, int), separator);
 		}
 	}
-	printf("%d\n", va_arg(ap, int));
+	printf("\n");
 	va_end(ap);
 }
