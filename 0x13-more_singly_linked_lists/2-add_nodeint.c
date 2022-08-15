@@ -3,8 +3,9 @@
 /**
  * add_nodeint - the function to add a new node
  * @n: the iteger member
+ * @head: the pointer to the first node of the list
  * Return: address of new node created  or
- * NULL if the malloc fails
+ *	   NULL if the malloc fails
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
@@ -13,10 +14,9 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
-	
+
 	new->n = n;
 	new->next = *head;
 	*head = new;
-
 	return (*head);
 }
