@@ -1,7 +1,7 @@
 #include <stddef.h>
 #include "lists.h"
 /**
- * listint_t - the function to put a node at the end
+ * add_nodeint_end - the function to put a node at the end
  * @head: the pointer to the first node of the list
  * @n: the value of the integer member
  * Return: the address of the new list on success
@@ -14,6 +14,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
  	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
+	
 	new->n = n;
 	if (*head == NULL)
 		*head = new;
