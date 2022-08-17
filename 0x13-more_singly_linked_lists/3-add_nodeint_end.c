@@ -1,11 +1,14 @@
 #include <stddef.h>
 #include "lists.h"
 /**
- * add_nodeint_end - the function to put a node at the end
- * @head: the pointer to the first node of the list
- * @n: the value of the integer member
- * Return: the address of the new list on success
- * 	   NUll on failure
+ * add_nodeint_end - Adds a new node at the
+ *                   end of a listint_t list.
+ * @head: A pointer to the address of the
+ *        head of the listint_t list.
+ * @n: The integer for the new node to contain.
+ *
+ * Return: If the function fails - NULL.
+ *         Otherwise - the address of the new element.
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
