@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /**
  * binary_to_uint - the function to convert binary to decimal
  * @b: a pointer to the stirng of characters
@@ -8,6 +9,8 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int dec = 0, mul = 1;
 	int len = 0, i = 0;
 
+	if (b == NULL) 
+		return (0);
 	while (b[i])
 	{
 		len += 1;
