@@ -1,5 +1,5 @@
 /**
- * git_bit - the functionto get the bit at an index
+ * get_bit - the functionto get the bit at an index
  * @n: the value to be converteed to some bit values
  * @index: the index to search for
  * Return: the value at that index or -1 if error occurs
