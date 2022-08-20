@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * print_list -  the funct to print the list of the nodes
+ * list_len -  the funct to print the list of the nodes
  * @n: the head passed in
  * Return:  the number of nodes in the list
  */
