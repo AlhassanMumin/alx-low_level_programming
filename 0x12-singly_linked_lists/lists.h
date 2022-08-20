@@ -4,16 +4,16 @@
 #include <stdlib.h>
 
 /**
- * typedef struct - the node struncture
+ * struct list_s - the node struncture
  * @str: the sttring constant member
  * @len: the integer member
  * @next: the pointer to node structrue
  */
-typedef struct singly
+typedef struct list_s 
 {
 	char *str;
 	unsigned int len;
-	struct singly *next;
+	struct list_s *next;
 }list_t;
 
 size_t list_len(const list_t *h);
