@@ -1,9 +1,9 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * print_list -  the funct to print the list of the nodes
- * @h: the head passed in
- * Return:  the number of nodes in the list
+ * print_list - the function to print list
+ * @h: the pointer to the first node in the list
+ * Return: the number of elements
  */
 size_t print_list(const list_t *h)
 {
