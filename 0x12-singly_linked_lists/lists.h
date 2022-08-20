@@ -8,6 +8,8 @@
  * @str: the sttring constant member
  * @len: the integer member
  * @next: the pointer to node structrue
+ *
+ * Description: singly linked list for alx-holberton
  */
 typedef struct list_s
 {
