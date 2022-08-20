@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
 /**
  * list_len -  the funct to print the list of the nodes
  * @n: the head passed in
