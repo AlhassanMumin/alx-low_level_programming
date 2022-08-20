@@ -9,7 +9,7 @@
  * @len: the integer member
  * @next: the pointer to node structrue
  */
-typedef struct list_s 
+typedef struct list_s
 {
 	char *str;
 	unsigned int len;
