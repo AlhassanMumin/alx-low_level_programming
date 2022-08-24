@@ -3,17 +3,17 @@
 /**
  * read_textfile - the function to read and write a file
  * @filename: the name of the file to read and write
- * @text_content: the number of characters to read and write
+ * @letters: the number of characters to read and write
  * Return: the number of characters that had been read and written
- */ 
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t fd = 0, char_read = 0, char_write = 0;
 	char *buf;
-	
+
 	if (filename == NULL)
 		return (0);
-	
+
 	buf = malloc(sizeof(char) * letters);
 	if (buf == NULL)
 	{
