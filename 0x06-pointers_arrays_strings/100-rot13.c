@@ -21,12 +21,16 @@ char *rot13(char *s)
 			      'b','c','d','e','f','g','h','i','j','k',
 			      'l','m'};
 
+
 	while (s[i])
 	{
 		for (index = 0; index < 52; index++)
 		{
 			if (s[i] == all_alpha[index])
+			{
 				s[i] = rot13_key[index];
+				break;
+			}
 		}
 		i++;
 	}
