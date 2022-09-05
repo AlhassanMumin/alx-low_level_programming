@@ -1,13 +1,10 @@
-#include <string.h>
 /**
- * _strcmp - The func compares two strings
- *
- * @s1: The value to be compared to
- * @s2: The value to compare to
- *
- * Return: positive value if  s1 is higheter than s2
- * 	   0 if s1 and s2 are same
- * 	   negative value if s2 is higher than s1
+ * _strcmp - compares two strings
+ * @s1: the first string
+ * @s2: the second string
+ * Return: positive if s1 is greater
+ * 	zero if s1 is equal to s2
+ * 	negative otherwise
  */
 int _strcmp(char *s1, char *s2)
 {
