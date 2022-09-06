@@ -1,5 +1,3 @@
-#include <ctype.h>
-#include <string.h>
 /**
  * rot13 - it will encode string using rot13
  * @s: the string that will be encoded
@@ -29,6 +27,7 @@ char *rot13(char *s)
 			if (s[i] == all_alpha[index])
 			{
 				s[i] = rot13_key[index];
+				break;
 			}
 		}
 		
