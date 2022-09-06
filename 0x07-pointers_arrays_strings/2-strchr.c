@@ -7,5 +7,18 @@
  */
 char *_strchr(char *s, char c)
 {
-	return (strchr(s, c));
+	int index = 0;
+	char *chr = NULL;
+
+	while (*(s + index))
+	{
+		if (s[index] == c)
+		{
+			chr = (s + index);
+			break;
+		}
+		index += 1;
+	}
+
+	return (chr);
 }
