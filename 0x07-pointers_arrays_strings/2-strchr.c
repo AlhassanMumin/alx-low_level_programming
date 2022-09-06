@@ -14,8 +14,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[index] == c)
 		{
-			chr = (s + index);
-			break;
+			return (s + index);
 		}
 		index += 1;
 	}
