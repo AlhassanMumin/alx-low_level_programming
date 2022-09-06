@@ -29,9 +29,9 @@ char *rot13(char *s)
 			if (s[i] == all_alpha[index])
 			{
 				s[i] = rot13_key[index];
-				break;
 			}
 		}
+		
 		i++;
 	}
 
