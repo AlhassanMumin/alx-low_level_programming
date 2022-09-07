@@ -7,24 +7,18 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, diag_left, diag_right;
+	int index, sum1 = 0, sum2 = 0;
 
-	diag_left =  0;
-	diag_right = 0;
-	for (i = 0; i < size; i++)
+	for (index = 0; index < size; index++)
 	{
-		for (j = 0; j < size; j++)
-		{
-			if (i == j)
-			{
-				diag_left = diag_left + a[i][j];
-			}
-			else if (i + j == size -1)
-			{
-				diag_right = diag_right + a[i][j];
-			}
-		}
+		sum1 += a[index];
+		a += size;						
 	}
-	printf("%d, %d\n",diag_left, diag_right);
+	a -= size;
+	for (index = 0; index < size; index++)						{
+		sum2 += a[index];
+		a -= size;
+	}
+	printf("%d, %d\n", sum1, sum2);
 }
 
