@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * print_diagsuums - It prints the sums of left and right diagonals
+ * print_diagsums - It prints the sums of left and right diagonals
  * @a: the square matrix
  * @size: the size of the square size
  */
@@ -21,4 +21,3 @@ void print_diagsums(int *a, int size)
 	}
 	printf("%d, %d\n", sum1, sum2);
 }
-
