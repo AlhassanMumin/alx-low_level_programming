@@ -7,24 +7,35 @@
  * Return:returns the pointer to a newly allocated space in memory
  */
 char *str_concat(char *s1, char *s2)
-{	char *concat;
+{
+	int s1len = 0, s2len = 0, i;
+	char *concat;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
+
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
-	concat = (char *)malloc(sizeof(char) * strlen(s1)
-		 + sizeof(char) * strlen(s2) + 1);
+
+	while (s1[s1len])
+		s1len++;
+
+	while (s1[s2len])
+		s2len++;
+
+
+	concat = malloc(s1len + s2len + 1);
 	if (concat == NULL)
-	{
 		return (NULL);
-	}
-	strcat(concat, s1);
-	strcat(concat, s2);
+
+	for (i = 0; i < s1len; i++)
+		concat[i] = s1[i];
+
+	for (i = 0; s2[i]; i++, s1len++)
+		concat[s1len] =  s2[i];
+
+	s1len++;
+	concat[s1len] = '\0';
+	
 	return (concat);
-	free(concat);
 }
