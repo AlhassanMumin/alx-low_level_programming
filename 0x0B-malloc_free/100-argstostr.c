@@ -13,7 +13,7 @@ char *argstostr(int ac, char **av)
 	char *concat;
 
 	k = 0;
-	for (i = 0; i < ac - 1; i++)
+	for (i = 0; i < *av[i]; i++)
 	{
 		for (j = 0; av[i][j]; j++)
 		{
