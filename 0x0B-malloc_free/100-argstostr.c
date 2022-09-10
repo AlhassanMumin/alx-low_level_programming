@@ -9,11 +9,11 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i, j, k, stlen;
+	int i, j, k, stlen = ac;
 	char *concat;
 
 	k = 0;
-	for (i = 0; i < *av[i]; i++)
+	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j]; j++)
 		{
