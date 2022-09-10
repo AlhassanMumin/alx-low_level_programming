@@ -13,7 +13,7 @@ char *argstostr(int ac, char **av)
 	char *concat;
 
 	k = 0;
-	for (i = 0; i < ac; i++)
+	for (i = 0; i < ac - 1; i++)
 	{
 		for (j = 0; av[i][j]; j++)
 		{
@@ -24,7 +24,7 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
-	concat = malloc(sizeof(char) +(stlen + 1));
+	concat = malloc(sizeof(char) + (stlen + 1));
 	if (concat == NULL)
 	{
 		return (NULL);
