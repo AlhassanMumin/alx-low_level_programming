@@ -14,8 +14,12 @@ char *argstostr(int ac, char **av)
 
 	k = 0;
 	for (i = 1; i < ac; i++)
-		for (;av[i][j];)
+	{
+		for (j = 0; av[i][j]; j++)
+		{
 			stlen++;
+		}
+	}
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
@@ -27,12 +31,12 @@ char *argstostr(int ac, char **av)
 	}
 	for (i = 1; i < ac; i++)
 	{
-		for (j = 0;av[i][j]; j++)
+		for (j = 0; av[i][j]; j++)
 		{
 			concat[k] = av[i][j];
 			k++;
 		}
-		_putchar('\n');
+		concat[k++] = '\n';
 	}
 	return (concat);
 }
