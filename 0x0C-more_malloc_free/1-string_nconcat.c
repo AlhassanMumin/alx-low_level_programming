@@ -9,10 +9,9 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len, i;
+	unsigned int len = 0, i;
 	char *str_ncpy;
 
-	len = strlen(s1);
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -21,7 +20,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	str_ncpy = malloc(sizeof(char) * (len + n) + 1);
+	while (s1[len])
+		len++;
+	str_ncpy = malloc(sizeof(char) * len + sizeof(char) * n);
 	if (str_ncpy == NULL)
 	{
 		return (NULL);
