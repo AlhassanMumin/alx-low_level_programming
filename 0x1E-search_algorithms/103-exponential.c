@@ -49,7 +49,7 @@ int binary_searcher(int *array, int value, size_t L, size_t R)
 	return -1;
 }
 
-**
+/**
   * exponential_search - Searches for a value in a sorted array
   *                      of integers using exponential search.
   * @array: A pointer to the first element of the array to search.
