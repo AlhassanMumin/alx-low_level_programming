@@ -13,19 +13,19 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t L = 0, R = size, mid = 0, ind;
+	size_t L, R, mid;
 
 	if (array == NULL)
 		return (-1);
-	while (L < R)
+	for (L = 0, R = size - 1; R >= L;)
 	{
 		printf("Searching in array: ");
-		for (ind = L; ind < R - 1; ind++)
-			printf("%d, ", array[ind]);
-		printf("%d\n", array[ind]);
+		for (mid = L; mid < R; mid++)
+			printf("%d, ", array[mid]);
+		printf("%d\n", array[mid]);
 		if (array[mid] == value)
 			return (mid);
-		mid = floor((L + R) / 2);
+		mid = L + floor((R - L) / 2);
 		if (array[mid] > value)
 			R = mid - 1;
 		else
